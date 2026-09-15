@@ -57,22 +57,22 @@ export function TeamPage() {
           return (
             <div key={idx} className={`bg-warm-charcoal p-6 rounded-2xl border transition-all duration-300 group relative overflow-hidden flex flex-col xl:flex-row items-center xl:items-start gap-6 h-full ${isLeader
               ? 'border-acid-lime shadow-[0_0_30px_rgba(212,242,104,0.15)]'
-              : 'border-white/10 hover:border-acid-lime/50'
+              : 'border-white/10 md:hover:border-acid-lime/50'
               }`}>
 
-              <div className="absolute top-0 right-0 w-48 h-48 bg-acid-lime/5 rounded-bl-full -z-10 group-hover:scale-150 transition-transform duration-700"></div>
+              <div className="absolute top-0 right-0 w-48 h-48 bg-acid-lime/5 rounded-bl-full -z-10 md:group-hover:scale-150 transition-transform duration-700"></div>
               {isLeader && (
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-acid-lime to-transparent opacity-70"></div>
               )}
 
               {/* Left side: Rectangular Image */}
-              <div className={`shrink-0 overflow-hidden rounded-xl border border-white/10 group-hover:border-acid-lime/50 transition-colors w-32 h-40`}>
-                <img src={member.image} alt={member.name} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" />
+              <div className={`shrink-0 overflow-hidden rounded-xl border border-white/10 md:group-hover:border-acid-lime/50 transition-colors w-32 h-40`}>
+                <img src={member.image} alt={member.name} className="w-full h-full object-cover transition-all duration-500 scale-105 md:group-hover:scale-100" />
               </div>
 
               {/* Right side: Details */}
               <div className="flex flex-col h-full flex-grow text-center xl:text-left py-2 w-full">
-                <h4 className={`font-sans font-medium text-off-white group-hover:text-acid-lime transition-colors mb-2 text-2xl`}>{member.name}</h4>
+                <h4 className={`font-sans font-medium text-off-white md:group-hover:text-acid-lime transition-colors mb-2 text-2xl`}>{member.name}</h4>
 
                 <div className="font-mono text-sm text-off-white/70 uppercase tracking-widest mb-4 flex items-center justify-center xl:justify-start gap-2 flex-wrap">
                   <span className={isLeader ? "text-acid-lime" : ""}>{member.role}</span>
