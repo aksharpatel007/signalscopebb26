@@ -87,7 +87,7 @@ export function Footer() {
               className="flex items-center gap-2 hover:text-acid-lime transition-colors"
             >
               <Users size={14} />
-              MEET THE TEAM
+              MEET THE BuildBeyond
               <ChevronRight size={14} />
             </Link>
             <p className="hidden md:block">Designed with precision. Built for truth.</p>
