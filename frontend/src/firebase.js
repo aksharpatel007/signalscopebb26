@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
-const VITE_FIREBASE_API_KEY = AIzaSyCDjPzLJ1xvhmfTCHx6XTUCJ85IDQxFQFM
-const VITE_FIREBASE_APP_ID = 1:153374686754:web:39868b2f3dbef71ceb547b
+
+VITE_FIREBASE_API_KEY = AIzaSyCDjPzLJ1xvhmfTCHx6XTUCJ85IDQxFQFM
+VITE_FIREBASE_APP_ID = 1:153374686754:web:39868b2f3dbef71ceb547b
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: "signalscope-3ffbe.firebaseapp.com",
